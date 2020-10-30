@@ -1,4 +1,3 @@
-
 raw_asserts = [
     {
         "func": "expectText",
@@ -21,8 +20,7 @@ locators = {}
 
 for item in raw_asserts:
     locators["locator=" + item["path.class"]] = {
-        "type": "WebElement",
-        
+        "type": "WebElement"
     }
 
 print(locators)
